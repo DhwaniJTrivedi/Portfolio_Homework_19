@@ -1,0 +1,252 @@
+body{
+  font-family: 'Big Shoulders Text', cursive;
+font-family: 'Open Sans', sans-serif;
+}
+header {
+  height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #B00000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #F3C4C4;
+  }
+  
+  nav ul li a:hover {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+  }
+  .target-div {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .maincontent{
+    width: 98%;
+    height: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  }
+  .description{
+    width: auto;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #F3C4C4;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .image_class{
+    align-items: center;
+    justify-content: center;
+  }
+  #heroGrid_subtrack{
+    margin: 0px 5%;
+  display: flex;
+  align-content: center;
+  min-height: 500px;
+background-color: #f9f9f9;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "subtrackImage subtrackDesc"
+  "subtrackImage subtrackDesc";
+  }
+  #heroGrid_artscape{
+    margin: 0px 5%;
+  display: flex;
+  align-content: center;
+  min-height: 500px;
+background-color: #f9f9f9;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "subtrackImage subtrackDesc"
+  "subtrackImage subtrackDesc";
+  }
+  #heroGrid_usdoi{
+    margin: 0px 5%;
+  display: flex;
+  align-content: center;
+  min-height: 500px;
+background-color: #f9f9f9;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "subtrackImage subtrackDesc"
+  "subtrackImage subtrackDesc";
+  }
+  #heroGrid1{
+    margin: 0px 5%;
+  display: flex;
+  align-content: center;
+  min-height: 500px;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "myDesc myImage"
+  "myDesc myImage";
+  }
+  .animated-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: plum;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Use the 'all' property to animate all CSS properties */
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1); /* Scale the button by 10% on hover */
+    background-color: #F44336; /* Change background color on hover */
+  }
+  .project-container {
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+  }
+  
+  .subtrack_image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .subtrack_image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .gif-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  .artscape_image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .artscape_image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .usdoi_image {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .usdoi_image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .project-description {
+    flex: 1;
+  }
+  
+
+  
+  .project-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description p {
+    font-size: 24px;
+  }
+#subtrackImage{
+  grid-area: subtrackImage;
+}
+#subtrackDesc{
+  grid-area: subtrackDesc;
+  
+}
+#myDesc{
+  grid-area: myDesc;
+}
+#myImage{
+  grid-area: myImage;
+  
+}
+
+  .footer {
+    text-align: center;
+    position: relative;
+  }
+  
+  hr {
+    margin-top: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .email {
+    margin-right: 20px;
+  }
+  
+  .linkedin-icon {
+    height: 24px;
+    width: auto;
+  }
+  /* @media only screen and (max-width: 767px) {
+    
+    #heroGrid1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    #heroGrid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .description,
+    .image {
+      flex: 1;
+      max-width: 100%;
+    }
+  
+    .image {
+      margin-top: 20px;
+    }
+  } */
+  @media only screen and (max-width: 767px) {
+    #heroGrid1 {
+      margin: 0px 5%;
+      flex-direction: column;
+      align-items: center;
+    }
+      .project-container {
+        background-color: #f9f9f9;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+}
+  }
