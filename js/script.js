@@ -1,17 +1,17 @@
-function scrollToContent(tabNumber) {
-    const content = document.getElementById(`content${tabNumber}`);
-    const contentOffset = content.getBoundingClientRect().top;
-    const navbarHeight = 100; // Adjust this to your navbar height if applicable
-    const scrollOptions = {
-      behavior: "smooth",
-      block: "start"
-    };
-    window.scrollBy({
-      top: contentOffset - navbarHeight,
-      left: 0,
-      behavior: "smooth"
-    });
-  }
+// function scrollToContent(tabNumber) {
+//     const content = document.getElementById(`content${tabNumber}`);
+//     const contentOffset = content.getBoundingClientRect().top;
+//     const navbarHeight = 100; // Adjust this to your navbar height if applicable
+//     const scrollOptions = {
+//       behavior: "smooth",
+//       block: "start"
+//     };
+//     window.scrollBy({
+//       top: contentOffset - navbarHeight,
+//       left: 0,
+//       behavior: "smooth"
+//     });
+//   }
   
 window.addEventListener("DOMContentLoaded", loading);
 
@@ -50,3 +50,47 @@ window.addEventListener("DOMContentLoaded", loading);
     // Open the link in a new window
     window.open("https://docs.google.com/presentation/d/1pl4L6lyyOs5nXY_gO50KO2ziFp5Tg-F8cURR_SLkcPg/edit?usp=sharing", "_blank");
   });
+  $(document).on("scroll", function(){
+    var pixels = $(document).scrollTop();
+    var pageHeight = $(document).height() - $(window).height();
+    var progress = 100 * pixels / pageHeight;
+    
+    $("div.progress").css("width", progress + "%");
+  });
+  $(document).ready(function() {
+    $("#submitForm").submit(function(event) {
+      event.preventDefault();
+      // Your form submission logic here
+      // You can add an AJAX request here to submit the form data to the server if needed
+
+      // Show the success modal
+      $("#successModal").modal("show");
+    });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var contactLink = document.querySelector('a[href="#contact"]');
+    if (contactLink) {
+      contactLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var formSection = document.getElementById('contact');
+        if (formSection) {
+          formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+  window.onscroll = function() {myFunction()};
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var projectLink = document.querySelector('a[href="#heroGrid_subtrack"]');
+    if (projectLink) {
+      projectLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var projectSection = document.getElementById('heroGrid_subtrack');
+        if (projectSection) {
+          projectSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+  });
+  window.onscroll = function() {myFunction()};

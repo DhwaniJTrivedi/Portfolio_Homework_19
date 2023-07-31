@@ -278,7 +278,15 @@ header {
     padding: 10px;
     background-color: white;
   }
-  
+  .progress {
+     position: fixed; 
+     top: 0; 
+     left: 0; 
+     height: 10px; 
+     background-color: purple; 
+     transition: all linear 0.1s; 
+     min-width: 1%; 
+    }
   .logo img {
     height: 50px;
     width: auto;
@@ -1065,3 +1073,10 @@ background-color: #f9f9f9;
     position: absolute;
     width: 100%;
   }
+  .signUp form {
+    margin: 35px auto;
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 7px;
+  }
+  
