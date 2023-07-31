@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", loading);
       // You can add an AJAX request here to submit the form data to the server if needed
 
       // Show the success modal
-      $("#successModal").modal("show");
+      $("#exampleModal").modal("show");
     });
   });
   document.addEventListener('DOMContentLoaded', function() {
