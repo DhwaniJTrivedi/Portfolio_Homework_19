@@ -3,8 +3,11 @@ body{
   font-family: 'Big Shoulders Text', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: "Questrial";
+font-family: 'Borel', cursive;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Borel", sans-serif;
+}
 .maincontent{
   width: auto;
   height: 100%;
@@ -287,40 +290,24 @@ header {
      transition: all linear 0.1s; 
      min-width: 1%; 
     }
-  .logo img {
-    height: 50px;
-    width: auto;
-  }
+    .customNav{
+      position: fixed;
+      width: 100%;
+      background: url("../images/transparency.png");
+      background-color: transparent !important;
+      background-size: cover;
+      z-index: 10;
+    }
+    .navbar-nav{
+      margin-left: auto;
+      margin-right: 0 !important;
+    }
+    .navbar-brand img{
+      padding-right: 15px;
+      width: 65px;
+    }
+
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #B00000;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #F3C4C4;
-  }
-  
-  nav ul li a:hover {
-    background-color: #000000;
-    color: #fff;
-    cursor: pointer;
-  }
-  .target-div {
-    margin-top: 20px;
-    text-align: center;
-  }
- 
   .description{
     width: auto;
     height: 200px;
