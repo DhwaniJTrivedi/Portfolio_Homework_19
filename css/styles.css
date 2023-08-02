@@ -105,7 +105,20 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
-
+.content-container {
+    position: relative;
+    z-index: 1;
+    /* Add any other styling you need for your content container */
+  }
+  .particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* This ensures that the particles don't block mouse interactions with the content */
+    /* Add any other styling you need for your particle container */
+  }
 .progress-container, .progress-state, .dump-truck, .dump-truck div {
   position: absolute;
 }
@@ -359,6 +372,7 @@ header {
      background-color: purple; 
      transition: all linear 0.1s; 
      min-width: 1%; 
+     z-index: 999;
     }
     .customNav{
       position: fixed;
