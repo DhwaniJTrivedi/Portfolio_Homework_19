@@ -8,10 +8,40 @@ font-family: 'Borel', cursive;
 h1, h2, h3, h4, h5, h6 {
   font-family: "Borel", sans-serif;
 }
-.maincontent{
+@keyframes animateBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@keyframes animateBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes moveElements {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.maincontent {
+  position: relative;
+  background-image: linear-gradient(90deg, #fff, #fff); /* Set your desired gradient colors */
+  background-size: 200% 100%;
+  animation: animateBackground 10s linear infinite;
+  padding: 50px; /* Add padding to give space for the moving elements */
   width: auto;
   height: 100%;
-padding: 10px;
 border: 1px solid gray;
 margin: 20px;
 display: flex;
@@ -19,6 +49,46 @@ flex-direction: column;
 opacity: 0;
   transition: opacity 0.5s ease;
 }
+
+/* Add some moving elements */
+.moving-element {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: hsla(0, 90%, 54%, 0.702); /* Set the color of the moving elements */
+  border-radius: 50%;
+  animation: moveElements 3s ease-in-out infinite;
+}
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #e4393980; /* Set the color of the particles */
+  border-radius: 50%;
+  animation: floatParticle 5s linear infinite, fadeParticle 5s linear alternate infinite;
+}
+
+/* Keyframes for floating particles */
+@keyframes floatParticle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes fadeParticle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 *, *:before, *:after {
   border: 0;
   box-sizing: border-box;

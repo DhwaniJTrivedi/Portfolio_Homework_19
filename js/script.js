@@ -12,6 +12,24 @@
 //       behavior: "smooth"
 //     });
 //   }
+document.addEventListener('DOMContentLoaded', function () {
+  const particlesContainer = document.querySelector('.maincontent');
+  const particleCount = 100; // Adjust this value to change the number of particles
+  const particles = [];
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('span');
+    particle.className = 'particle';
+    particlesContainer.appendChild(particle);
+    particles.push(particle);
+
+    // Randomly position the particle
+    const positionX = Math.random() * particlesContainer.clientWidth;
+    const positionY = Math.random() * particlesContainer.clientHeight;
+    particle.style.left = positionX + 'px';
+    particle.style.top = positionY + 'px';
+  }
+});
 $(document).ready(function() {
   $('.navbar-toggler').on('click', function() {
     $('#navbarSupportedContent').collapse('toggle');
