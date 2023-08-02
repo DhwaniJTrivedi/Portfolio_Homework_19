@@ -12,7 +12,11 @@
 //       behavior: "smooth"
 //     });
 //   }
-  
+$(document).ready(function() {
+  $('.navbar-toggler').on('click', function() {
+    $('#navbarSupportedContent').collapse('toggle');
+  });
+});
 window.addEventListener("DOMContentLoaded", loading);
 
   function loading() {

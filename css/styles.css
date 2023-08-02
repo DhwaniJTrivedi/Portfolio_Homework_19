@@ -306,8 +306,18 @@ header {
       padding-right: 15px;
       width: 65px;
     }
-
+    .navbar-light .navbar-nav .nav-item .nav-link {
+     
+      color: #333;
+      background-color: transparent;
+      transition: transform 0.3s ease;
+    }
   
+    .navbar-light .navbar-nav .nav-item .nav-link:hover {
+      color: #b00000;
+      background-color: #F3C4C4;
+      transform: scale(1.1);
+    }
   .description{
     width: auto;
     height: 200px;
@@ -390,9 +400,9 @@ background-color: #f9f9f9;
     margin-right: 20px;
   }
   .subtrack_image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 600px;
+    height: 500px;
+    margin: 15px;
   }
   .gif-container {
     display: flex;
@@ -404,9 +414,9 @@ background-color: #f9f9f9;
     margin-right: 20px;
   }
   .artscape_image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 600px;
+    height: 500px;
+    margin: 15px;
   }
 
   .usdoi_image {
@@ -414,9 +424,9 @@ background-color: #f9f9f9;
     margin-right: 20px;
   }
   .usdoi_image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 600px;
+    height: 500px;
+    margin: 15px;
   }
   .project-description {
     flex: 1;
@@ -471,7 +481,7 @@ background-color: #f9f9f9;
     height: 24px;
     width: auto;
   }
-  @media only screen and (max-width: 767px) {
+  /* @media only screen and (max-width: 767px) {
     #heroGrid1 {
       margin: 0px 5%;
       flex-direction: column;
@@ -484,7 +494,57 @@ background-color: #f9f9f9;
       align-items: center;
 
 }
+  } */
+  @media only screen and (max-width: 767px) {
+    #heroGrid1 {
+      margin: 0 5%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-container {
+      background-color: #f9f9f9;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar-light .navbar-nav .nav-item .nav-link:hover {
+      /* Change the styles on hover */
+      color: #b00000;
+      background-color: #F3C4C4;
+    }
   }
+  
+  /* Tablet Version (768px to 1023px) */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #heroGrid1 {
+      margin: 0 10%; /* Increase the margin for a wider layout */
+    }
+  
+    .project-container {
+      background-color: #f9f9f9;
+      width: 90%; /* Adjust the width to leave more space for content */
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* You may also need to adjust font sizes and other styles for better readability */
+    /* For example: */
+    .project-title {
+      font-size: 1.2rem; /* Decrease the font size to fit more content */
+    }
+  
+    .project-description {
+      font-size: 1rem; /* Adjust the font size of the description */
+    }
+    .navbar-light .navbar-nav .nav-item .nav-link:hover {
+      /* Change the styles on hover */
+      color: #b00000;
+      background-color: #F3C4C4;
+    }
+  }
+  
+ 
 
   .container_subtrack {
     align-items: center;
