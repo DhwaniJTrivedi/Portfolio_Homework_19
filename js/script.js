@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", loading);
   });
   document.querySelector(".container_artscape").addEventListener("click", () => {
     // Open the link in a new window
-    window.open("https://docs.google.com/presentation/d/1m3prUtj1v4DuwcZ7XicW9-4ni3KNs65TypE2CmCusFQ/edit?usp=sharing", "_blank");
+    window.open("https://dhwanijtrivedi.github.io/Portfolio-Homework-20/", "_blank");
   });
   document.querySelector(".container_usdoi").addEventListener("click", () => {
     // Open the link in a new window
