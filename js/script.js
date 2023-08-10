@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded", loading);
    
   document.querySelector(".container_subtrack").addEventListener("click", () => {
     // Open the link in a new window
-    window.open("https://docs.google.com/presentation/d/194sUtutDolPjAD480f1m5HSbz1_ydFZWQ4CVtW-dW1s/edit?usp=sharing", "_blank");
+    window.open("https://dhwanijtrivedi.github.io/Portfolio_casestudy_page/", "_blank");
   });
   document.querySelector(".container_artscape").addEventListener("click", () => {
     // Open the link in a new window
